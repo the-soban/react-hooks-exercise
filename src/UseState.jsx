@@ -13,9 +13,11 @@ const UseState = () => {
 
     return(
         <div>
+            <h1>useState hook example 1:</h1>
             <button onClick={decrement}> - </button>
             <h2>{count}</h2>
             <button onClick={increment}> + </button>
+            <hr />
         </div>
     );
 }

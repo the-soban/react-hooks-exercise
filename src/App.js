@@ -1,6 +1,7 @@
 import './App.css';
 import UseState from './UseState';
 import UseState2 from './UseState2';
+import UseReducer from './UseReducer';
 
 function App() {
   return (
@@ -8,9 +9,9 @@ function App() {
       <h1>Hello</h1>
       <UseState />
       <br />
-      <br />
-      <br />
       <UseState2 />
+      <br />
+      <UseReducer />
     </div>
   );
 }
