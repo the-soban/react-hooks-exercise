@@ -2,6 +2,7 @@ import './App.css';
 import UseState from './UseState';
 import UseState2 from './UseState2';
 import UseReducer from './UseReducer';
+import UseEffect from './UseEffect';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <UseState2 />
       <br />
       <UseReducer />
+      <br />
+      <UseEffect />
     </div>
   );
 }
