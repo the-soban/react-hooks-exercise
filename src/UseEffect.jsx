@@ -17,6 +17,7 @@ const UseEffect = () => {
         <>
             <h1>useEffect hook example:</h1>
             <h2>Email: {data}</h2>
+            <hr />
         </>
     );
 

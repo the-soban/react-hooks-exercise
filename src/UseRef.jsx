@@ -1,15 +1,24 @@
-import React, { useRef } from "react";
-// import { useState } from "react";
+import React, { useState, useRef } from "react";
 
 const UseRef = () => {
 
+    const [name, setName] = useState("Soban");
+    const inputRef = useRef(null);
+
+    const clicked = () => {
+        inputRef.current.focus();
+        setName(inputRef.current.value);
+        inputRef.current.value = "";
+        inputRef.current.focus();
+    }
+
     return(
         <>
-            <h1>useEffect hook example:</h1>
-            <br />
-            <h2>Soban</h2>
-            <input type="text" placeholder="Enter your name..." />
-            <button>Change Name</button>
+            <h1>useRef hook example:</h1>
+            <h2>Name: {name}</h2>
+            <input type="text" placeholder="Enter your name..." ref={inputRef} />
+            <button onClick={clicked}>Change Name</button>
+            <hr />
         </>
     );
 }
