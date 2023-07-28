@@ -5,6 +5,7 @@ import UseReducer from './UseReducer';
 import UseEffect from './UseEffect';
 import UseRef from './UseRef';
 import UseLayoutEffect from './UseLayoutEffect';
+import UseImperativeHandle from './UseImperativeHandle';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <UseRef />
       <br />
       <UseLayoutEffect />
+      <br />
+      <UseImperativeHandle />
+      <br />
     </div>
   );
 }

@@ -13,7 +13,9 @@ const UseLayoutEffect = () => {
 
     return(
         <>
+            <h1>useLayoutEffect hook example 1:</h1>
             <input value="Soban" ref={inputRef} />
+            <hr />
         </>
     );
 }
