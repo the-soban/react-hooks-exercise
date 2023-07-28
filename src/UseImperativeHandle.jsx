@@ -6,6 +6,7 @@ const UseImperativeHandle = () => {
 
     return(
         <>
+            <h1>useImperativeHandle hook example 1:</h1>
             <button onClick={() => {
                 btnRef.current.changeToggle();
             }}>Parent Button</button>
