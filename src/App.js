@@ -6,6 +6,7 @@ import UseEffect from './UseEffect';
 import UseRef from './UseRef';
 import UseLayoutEffect from './UseLayoutEffect';
 import UseImperativeHandle from './UseImperativeHandle';
+import UseContext from './UseContext';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <br />
       <UseImperativeHandle />
       <br />
+      <UseContext />
     </div>
   );
 }
