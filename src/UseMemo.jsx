@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 
 const UseMemo = () => {
     const [data, setData] = useState(null);
+    const [toggle, setToggle] = useState(true);
 
     useEffect(() => {
         axios.get("https://jsonplaceholder.typicode.com/comments").
@@ -28,10 +29,19 @@ const UseMemo = () => {
         return longestName;
     }
 
+    const getLongestName = useMemo(() => {
+        findLongestName(data)
+    }, [data]);
+
     return(
         <div>
             <h1>useMemo hook example 1:</h1>
-            <div> {findLongestName(data)} </div>
+            <div> {getLongestName} </div>
+            <button onClick={() => {
+                setToggle(!toggle);
+            }}>Toggle</button>
+            {toggle && <p>Toggle is ON</p>}
+            
             <hr />
         </div>
     );
