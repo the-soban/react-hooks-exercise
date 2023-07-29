@@ -7,6 +7,7 @@ import UseRef from './UseRef';
 import UseLayoutEffect from './UseLayoutEffect';
 import UseImperativeHandle from './UseImperativeHandle';
 import UseContext from './UseContext';
+import UseMemo from './UseMemo';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
       <UseImperativeHandle />
       <br />
       <UseContext />
+      <br />
+      <UseMemo />
     </div>
   );
 }
