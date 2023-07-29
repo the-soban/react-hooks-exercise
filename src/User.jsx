@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "./UseContext";
 
-const User = ({ username }) => {
+const User = () => {
+    const { username } = useContext(AppContext);
+
     return(
         <div>
             <h3>User: {username}</h3>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "./UseContext";
 
-const Login = ({ setUsername }) => {
+const Login = () => {
+    const { setUsername } = useContext(AppContext);
+
     return(
         <div>
             <input type="text" onChange={(event) => {
