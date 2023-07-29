@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useCallback, useState } from "react";
 import Child from './Child';
 
 const UseCallback = () => {
     const [data, setData] = useState("Hello World!");
     const [toggle, setToggle] = useState(true);
 
-    const returnData = () => {
-        return data;
-    }
+    const returnData = useCallback((name) => {
+        return data + name;
+    }, [data]);
 
     return(
         <div>

@@ -8,7 +8,7 @@ const Child = ({ returnData }) => {
 
     return(
         <div>
-            {returnData}
+            {returnData(" Soban")}
         </div>
     );
 }
